@@ -33,7 +33,7 @@ def vt_file_scan(file_hash):
     print(response.json())
     #return response.json()
     #What will be output if the file is not found in VT database
-
+#http://jsonlint.vearne.cc/
 
 if __name__ == "__main__":
     #vt_file_scan(file_hash)
