@@ -1,0 +1,23 @@
+stage 1 
+OPTION1: test hash against clipboard hash
+- gives the first option 'test file hash'
+- Output of the above says 'file hashes match. File integrity 100%' on a textbox 
+
+stage 2 (API integration)
+OPTION2: virustotal after simplying default JSON output format
+- gives the second option 'test file hash on Virustotal' (if user has set a API key)
+- Output above is a CLI displaying neccessary JSON keys and data
+
+Stage 3 finishing touches
+- Turn to .exe
+- figure out the installation process to add reg key for context menu
+- Add a config menu via cli
+- Let user configure an API key
+- run on startup option
+- Make it OS agnostic
+
+README
+- shows animated gifs for app in action
+- how to setup and pre-reqs
+- FAQ's section
+
