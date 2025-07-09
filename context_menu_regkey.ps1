@@ -1,4 +1,7 @@
+#Look into PATH variable if possible
 $pythonPath = "C:\Python39\python.exe"
+
+
 $scriptPath = "C:\Tools\hash_file.py"
 
 New-Item -Path "HKCR:\*\shell\HashThisFile" -Force | Out-Null

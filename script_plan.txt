@@ -1,7 +1,8 @@
 stage 1 
 OPTION1: test hash against clipboard hash
 - gives the first option 'test file hash'
-- Output of the above says 'file hashes match. File integrity 100%' on a textbox 
+- context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256
+- When successful output of the above says 'File hashes match. File integrity 100%' on a textbox else 'WARNING: File hashes do not match! Integrity compromised."
 
 stage 2 (API integration)
 OPTION2: virustotal after simplying default JSON output format
