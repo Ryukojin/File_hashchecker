@@ -1,24 +1,38 @@
 stage 1 
 OPTION1: test hash against clipboard hash
-- gives the first option 'test file hash'
-- context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256
-- When successful output of the above says 'File hashes match. File integrity 100%' on a textbox else 'WARNING: File hashes do not match! Integrity compromised."
+- gives the first option 'Test file hash'
+- When successful a CLI output of the above says 'File hashes match. File integrity 100%' on a textbox else 'WARNING: File hashes do not match! Integrity compromised."
+Issues: 
+- Stop the script when no hash found in clipboard 
+- how do I instruct regedit to acknowledge .py files called in the main script
 
-stage 2 (API integration)
+
+stage 2
+- context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256
+
+
+stage 3 (API integration)
 OPTION2: virustotal after simplying default JSON output format
-- gives the second option 'test file hash on Virustotal' (if user has set a API key)
+- gives the 3rd option 'Scan with Virustotal' (if user has set a API key)
 - Output above is a CLI displaying neccessary JSON keys and data
+
 
 Stage 3 finishing touches
 - Turn to .exe
-- figure out the installation process to add reg key for context menu
+- figure out the setup file to setup all neccessary reg key to build the  context menu
 - Add a config menu via cli
 - Let user configure an API key
 - run on startup option
 - Make it OS agnostic
+- Dockerise it
+- change output to text box GUI
 
-README
+
+Repo README
 - shows animated gifs for app in action
 - how to setup and pre-reqs
 - FAQ's section
 
+
+TEST CASES
+- Test hashlibs accuracy using different hashing libraries

@@ -2,7 +2,7 @@ import requests
 import hashlib
 from key import vt_api
 
-file_path = 'C:\\Users\\Fahim\\Downloads\\DCP_Interview_Qtns.txt'
+file_path = "C:\\Users\\Fahim\\Downloads\\Interview_qtn_bank.txt"
 
 def get_file_hash(file_path, algo='sha256'):
         # Choose hashing algorithm
@@ -15,8 +15,7 @@ def get_file_hash(file_path, algo='sha256'):
     return hash_func.hexdigest()
 
  
-
-file_hash = '052b35727ed88753b4de63dedab884fe919482f666e37b10d6ee6f9d2e9091dc'
+file_hash = 'cd10fb91d93196728122f41363b97c161e8ca31b158dbacedf2c4cb52c6417e7'
 
 
 def vt_file_scan(file_hash):
@@ -35,10 +34,7 @@ def vt_file_scan(file_hash):
     #What will be output if the file is not found in VT database
 #http://jsonlint.vearne.cc/
 
+
 if __name__ == "__main__":
     #vt_file_scan(file_hash)
-    scan = vt_file_scan(file_hash)
-    #get_file_hash(file_path)
-
-
-
+    print(get_file_hash(file_path, algo='sha256'))
