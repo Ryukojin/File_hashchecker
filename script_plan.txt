@@ -1,30 +1,22 @@
-stage 1 
+Version 1.0
 OPTION1: test hash against clipboard hash
-- gives the first option 'Test file hash'
-- When successful a CLI output of the above says 'File hashes match. File integrity 100%' else 'WARNING: File hashes do not match! Integrity compromised."
+[DONE] gives the first option 'Test file hash'
+[DONE] When successful a CLI output of the above says 'File hashes match. File integrity 100%' else 'WARNING: File hashes do not match! Integrity compromised."
 Issues: 
 - Stop the script when no hash found in clipboard
 
 
-stage 2
-- context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256
+Features
+- context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256'
 
 
-stage 3 (API integration)
-OPTION2: virustotal after simplying default JSON output format
-- gives the 3rd option 'Scan with Virustotal' (if user has set a API key)
-- Output above is a CLI displaying neccessary JSON keys and data
-
-
-Stage 3 finishing touches
+Packaging
 - Turn to .exe
-- figure out the setup file to setup all neccessary reg key to build the  context menu
+- figure out the setup file to setup all neccessary reg key to build the  context menu. May be run a .reg file?
 - Add a config menu via cli
-- Let user configure an API key
 - run on startup option
-- Make it OS agnostic
 - Dockerise it
-- change output to text box GUI
+- Make a Linux version
 
 
 Repo README
@@ -37,3 +29,12 @@ TEST CASES
 - Test using two different files hashes
 - Test one algo vs another
 - Test hashlibs accuracy using different hashing libraries
+
+=======================================================================
+
+Version 2.0 (Virustotal API integration)
+OPTION2: virustotal after simplying default JSON output format
+- gives the 3rd option 'Scan with Virustotal' (if user has set a API key)
+- Output above is a CLI displaying neccessary JSON keys and data
+- Let user configure an API key
+- change output to text box GUI
