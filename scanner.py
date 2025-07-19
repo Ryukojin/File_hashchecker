@@ -1,8 +1,9 @@
 import requests
 import hashlib
+import pyperclip
+import re
 from key import vt_api
 
-file_path = "C:\\Users\\Fahim\\Downloads\\Interview_qtn_bank.txt"
 
 def get_file_hash(file_path, algo='sha256'):
         # Choose hashing algorithm
@@ -14,10 +15,28 @@ def get_file_hash(file_path, algo='sha256'):
                 hash_func.update(chunk)
     return hash_func.hexdigest()
 
- 
-file_hash = 'cd10fb91d93196728122f41363b97c161e8ca31b158dbacedf2c4cb52c6417e7'
+
+def get_clipboard():
+    hash_regex = r"\b([a-fA-F0-9]{32}|[a-fA-F0-9]{40}|[a-fA-F0-9]{64})\b"
+    last_clipboard = ""
+    print("\nScanning clipboard for existing hashes...")
+
+    current_clipboard = pyperclip.paste()
+            
+    if current_clipboard != last_clipboard:
+        last_clipboard = current_clipboard
+        matches = re.findall(hash_regex, current_clipboard)
+                
+        if matches:
+            print(f"✅ Hash found: {matches[0]}")
+        else:
+            print("No hash found in clipboard, please copy a hash to the clipboard")
+    
+    return matches[0] if matches else None
 
 
+#What will be output if the file is not found in VT database
+#http://jsonlint.vearne.cc/
 def vt_file_scan(file_hash):
 
     url = f"https://www.virustotal.com/api/v3/files/{file_hash}"
@@ -31,10 +50,10 @@ def vt_file_scan(file_hash):
 
     print(response.json())
     #return response.json()
-    #What will be output if the file is not found in VT database
-#http://jsonlint.vearne.cc/
 
 
+'''
 if __name__ == "__main__":
     #vt_file_scan(file_hash)
     print(get_file_hash(file_path, algo='sha256'))
+'''

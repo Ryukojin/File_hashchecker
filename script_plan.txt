@@ -1,10 +1,9 @@
 stage 1 
 OPTION1: test hash against clipboard hash
 - gives the first option 'Test file hash'
-- When successful a CLI output of the above says 'File hashes match. File integrity 100%' on a textbox else 'WARNING: File hashes do not match! Integrity compromised."
+- When successful a CLI output of the above says 'File hashes match. File integrity 100%' else 'WARNING: File hashes do not match! Integrity compromised."
 Issues: 
-- Stop the script when no hash found in clipboard 
-- how do I instruct regedit to acknowledge .py files called in the main script
+- Stop the script when no hash found in clipboard
 
 
 stage 2

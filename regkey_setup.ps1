@@ -1,7 +1,7 @@
 #Look into PATH variable if possible
 $pythonPath = "C:\Users\Fahim\AppData\Local\Programs\Python\Python312\python.exe"
 
-
+#Where will the script be located after installer installs it in Windows?
 $scriptPath = "D:\5. Code\Malware_hashcheck\test_script.py"
 
 #New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT
