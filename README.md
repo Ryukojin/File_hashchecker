@@ -1,5 +1,5 @@
 # Malware_hashcheck
-![Logo](https://github.com/Ryukojin/Malware_hashcheck/blob/main/logo_filehashcheck.png)
+![Logo](https://github.com/Ryukojin/Malware_hashcheck/blob/main/logo.png)
 
 A simple tool that hash checks downloaded files from websites that provide a hash value
 - The tool resides in your context menu and tests whether the hash in your clipboard matches that of the file
