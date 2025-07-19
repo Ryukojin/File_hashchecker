@@ -1,5 +1,6 @@
 key.py
 test_script.py
+vt_scan.py
 __pycache__/
 *.pyc
 *.pyo

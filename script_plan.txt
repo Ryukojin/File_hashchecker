@@ -34,4 +34,6 @@ Repo README
 
 
 TEST CASES
+- Test using two different files hashes
+- Test one algo vs another
 - Test hashlibs accuracy using different hashing libraries

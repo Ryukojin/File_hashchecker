@@ -2,7 +2,6 @@ import requests
 import hashlib
 import pyperclip
 import re
-from key import vt_api
 
 
 def get_file_hash(file_path, algo='sha256'):
@@ -35,25 +34,7 @@ def get_clipboard():
     return matches[0] if matches else None
 
 
-#What will be output if the file is not found in VT database
-#http://jsonlint.vearne.cc/
-def vt_file_scan(file_hash):
-
-    url = f"https://www.virustotal.com/api/v3/files/{file_hash}"
-
-    headers = {
-        "accept": "application/json",
-        "x-apikey": vt_api
-    }
-
-    response = requests.get(url, headers=headers)
-
-    print(response.json())
-    #return response.json()
-
-
 '''
 if __name__ == "__main__":
-    #vt_file_scan(file_hash)
     print(get_file_hash(file_path, algo='sha256'))
 '''
