@@ -1,4 +1,4 @@
-# Malware_hashcheck
+# File_hashchecker
 ![Logo](https://github.com/Ryukojin/Malware_hashcheck/blob/main/logo.png)
 
 A simple tool that hash checks downloaded files from websites that provide a hash value
