@@ -2,27 +2,22 @@ Version 1.0
 OPTION1: test hash against clipboard hash
 [DONE] gives the first option 'Test file hash'
 [DONE] When successful a CLI output of the above says 'File hashes match. File integrity 100%' else 'WARNING: File hashes do not match! Integrity compromised."
-Issues: 
-- Stop the script when no hash found in clipboard
-
-
-Features
+Features:
+- Update the readme to be portfolio ready
 - context menu further opens to a submenu to show the two options 'Use MD5' and 'Use SHA-256'
-
-
-Packaging
-- Turn to .exe
-- figure out the setup file to setup all neccessary reg key to build the  context menu. May be run a .reg file?
-- Add a config menu via cli
-- run on startup option
-- Dockerise it
-- Make a Linux version
-
+- Test other hashing libraries
 
 Repo README
-- shows animated gifs for app in action
+- shows animated gifs for app in action. Clip demos without hash in clipboard and then after with value in clipboard. Use gifcap.dev
 - how to setup and pre-reqs
 - FAQ's section
+
+Packaging
+- figure out the setup file to setup all neccessary reg key to build the context menu. May be run a .reg file?
+- Turn to .exe ? pypackage
+- Add a config menu via cli
+- Dockerise it
+- Make a Linux version
 
 
 TEST CASES
