@@ -1,6 +1,6 @@
-# Malware_hashcheck
+# File_hashchecker
 ![Logo](https://github.com/Ryukojin/Malware_hashcheck/blob/main/logo.png)
 
-A simple tool that hash checks downloaded files from websites that provide a hash value
-- The tool resides in your context menu and tests whether the hash in your clipboard matches that of the file
-- Additionally, also provides you the option to cross check for any known reports on the virustotal database. Requires the users to obtain API keys from Virustotal commmunity
+A user friendly 2-click tool for hash checking the downloaded files from mirror websites that provide hash values of source files
+- The tool resides in your context menu and tests whether the hash in your clipboard matches that of the target file
+- Works on Windows for now
